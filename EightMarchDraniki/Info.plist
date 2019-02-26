@@ -41,19 +41,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>Fabric</key>
-    <dict>
-        <key>APIKey</key>
-        <string>74081678563adee16dfe27433c784ede83df27a8</string>
-        <key>Kits</key>
-        <array>
-            <dict>
-                <key>KitInfo</key>
-                <dict/>
-                <key>KitName</key>
-                <string>Crashlytics</string>
-            </dict>
-        </array>
-    </dict>
 </dict>
 </plist>

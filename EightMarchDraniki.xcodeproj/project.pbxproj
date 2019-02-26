@@ -114,7 +114,6 @@
 				465C0FDA2223EC3F0091EA38 /* Sources */,
 				465C0FDB2223EC3F0091EA38 /* Frameworks */,
 				465C0FDC2223EC3F0091EA38 /* Resources */,
-				465C0FFE222436960091EA38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -172,24 +171,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		465C0FFE222436960091EA38 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 74081678563adee16dfe27433c784ede83df27a8 dc6c163bc82426400da359639896cc126810ddb0e1030621052803a6ad2c24be\n";
-		};
 		7ECAEEE5D3C94AD25729FC20 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,7 +353,7 @@
 			baseConfigurationReference = AFA8F07F0B1B0DE4A763A6D8 /* Pods-EightMarchDraniki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4D96X2TNB8;
 				INFOPLIST_FILE = EightMarchDraniki/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -382,6 +363,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chamberlain.EightMarchDraniki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Coherent Wildcard";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -392,7 +374,8 @@
 			baseConfigurationReference = 1E2EFFD3CB6DFCCCF85FF0B3 /* Pods-EightMarchDraniki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4D96X2TNB8;
 				INFOPLIST_FILE = EightMarchDraniki/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -402,6 +385,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chamberlain.EightMarchDraniki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Coherent Wildcard";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
