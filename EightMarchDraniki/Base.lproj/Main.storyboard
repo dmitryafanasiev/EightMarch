@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="58R-VT-8Vq">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="UVq-Yt-N0C">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="58R-VT-8Vq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rEr-MV-GSY">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6bb-u7-WiR" kind="relationship" relationship="rootViewController" id="DgT-tb-ZdW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEe-s0-wGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1756" y="-249"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="dxR-NC-bfx">
+            <objects>
+                <viewController id="6bb-u7-WiR" customClass="WelcomeViewController" customModule="EightMarchDraniki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2OM-1l-PNc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome" translatesAutoresizingMaskIntoConstraints="NO" id="GVl-H5-QTc">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="819"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqr-0o-fWs">
+                                <rect key="frame" x="87.666666666666686" y="386" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2sZ-bu-jjz"/>
+                                    <constraint firstAttribute="width" constant="200" id="RHG-C5-qvf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
+                                <state key="normal" title="Получить подарок!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="6bb-u7-WiR" eventType="touchUpInside" id="EL0-Ac-tK5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrp-Xd-ton">
+                                <rect key="frame" x="40" y="84" width="295" height="21"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ay-8A-DH3">
+                                <rect key="frame" x="87.666666666666686" y="618" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8QY-oN-il7"/>
+                                    <constraint firstAttribute="height" constant="50" id="wcu-hm-vJS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
+                                <state key="normal" title="Что это?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="wtfButtonPressed" destination="6bb-u7-WiR" eventType="touchUpInside" id="pdo-xq-7bz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GVl-H5-QTc" firstAttribute="leading" secondItem="9q7-G3-rAW" secondAttribute="leading" id="9i0-U1-cbl"/>
+                            <constraint firstItem="9q7-G3-rAW" firstAttribute="bottom" secondItem="7Ay-8A-DH3" secondAttribute="bottom" constant="110" id="Ald-Ob-vhj"/>
+                            <constraint firstItem="9q7-G3-rAW" firstAttribute="bottom" secondItem="GVl-H5-QTc" secondAttribute="bottom" constant="-40" id="DRZ-04-Gw6"/>
+                            <constraint firstItem="wrp-Xd-ton" firstAttribute="top" secondItem="9q7-G3-rAW" secondAttribute="top" constant="40" id="Hqk-iv-keg"/>
+                            <constraint firstItem="wrp-Xd-ton" firstAttribute="leading" secondItem="9q7-G3-rAW" secondAttribute="leading" constant="40" id="Wkq-yX-VAT"/>
+                            <constraint firstItem="gqr-0o-fWs" firstAttribute="centerY" secondItem="9q7-G3-rAW" secondAttribute="centerY" id="aLS-sm-EjQ"/>
+                            <constraint firstItem="GVl-H5-QTc" firstAttribute="top" secondItem="9q7-G3-rAW" secondAttribute="top" constant="-45" id="fVC-wU-zsa"/>
+                            <constraint firstItem="7Ay-8A-DH3" firstAttribute="centerX" secondItem="9q7-G3-rAW" secondAttribute="centerX" id="mWJ-i0-8si"/>
+                            <constraint firstItem="gqr-0o-fWs" firstAttribute="centerX" secondItem="9q7-G3-rAW" secondAttribute="centerX" id="nbc-GN-YCb"/>
+                            <constraint firstItem="9q7-G3-rAW" firstAttribute="trailing" secondItem="GVl-H5-QTc" secondAttribute="trailing" id="r8G-q4-vay"/>
+                            <constraint firstItem="9q7-G3-rAW" firstAttribute="trailing" secondItem="wrp-Xd-ton" secondAttribute="trailing" constant="40" id="yuM-4X-dMs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9q7-G3-rAW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BEY-NK-qGf"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="wrp-Xd-ton" id="H5U-rc-6x6"/>
+                        <outlet property="startButton" destination="gqr-0o-fWs" id="aX0-XW-y7i"/>
+                        <outlet property="wtfButton" destination="7Ay-8A-DH3" id="WSB-xw-P59"/>
+                        <segue destination="703-4V-yAM" kind="show" identifier="ShowQuestions" id="QPo-0y-nID"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hM4-Pz-jif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-938" y="-248"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="clB-vc-fyl">
+            <objects>
+                <viewController id="703-4V-yAM" customClass="RootViewController" customModule="EightMarchDraniki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="502-Ir-ELC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="iAZ-4m-2z3"/>
+                    </view>
+                    <connections>
+                        <segue destination="NYr-Ec-46d" kind="show" identifier="ShowGift" id="lTh-bk-nLR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="-243"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="snT-py-3hH">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController" id="S4R-Ja-viH" customClass="DataViewController" customModule="EightMarchDraniki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZwX-cT-FIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Background0" translatesAutoresizingMaskIntoConstraints="NO" id="Mri-pl-FGb">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="819"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmU-qm-9V8">
+                                <rect key="frame" x="20" y="64" width="335" height="21"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ответ:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghV-4l-mrN">
+                                <rect key="frame" x="20" y="105" width="335" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ou5-L6-Mkm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu9-GH-O3n">
+                                <rect key="frame" x="87.666666666666686" y="169" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3sG-Df-81F"/>
+                                    <constraint firstAttribute="height" constant="50" id="Hfv-2F-QJO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
+                                <state key="normal" title="Далее">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionButtonPressed" destination="S4R-Ja-viH" eventType="touchUpInside" id="w3j-lN-6cJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mri-pl-FGb" firstAttribute="centerX" secondItem="K9I-jD-KjA" secondAttribute="centerX" id="45z-6n-PZz"/>
+                            <constraint firstItem="K9I-jD-KjA" firstAttribute="top" secondItem="Mri-pl-FGb" secondAttribute="top" constant="45" id="A3M-eb-P7v"/>
+                            <constraint firstItem="Mri-pl-FGb" firstAttribute="bottom" secondItem="K9I-jD-KjA" secondAttribute="bottom" constant="40" id="AZh-qU-dYy"/>
+                            <constraint firstItem="Mri-pl-FGb" firstAttribute="width" secondItem="ZwX-cT-FIQ" secondAttribute="width" id="FdW-V1-bVk"/>
+                            <constraint firstItem="ghV-4l-mrN" firstAttribute="leading" secondItem="K9I-jD-KjA" secondAttribute="leading" constant="20" id="IZG-0o-lPn"/>
+                            <constraint firstItem="NmU-qm-9V8" firstAttribute="leading" secondItem="K9I-jD-KjA" secondAttribute="leading" constant="20" id="J6U-Uu-A7i"/>
+                            <constraint firstItem="ghV-4l-mrN" firstAttribute="centerX" secondItem="K9I-jD-KjA" secondAttribute="centerX" id="LrS-gP-FE9"/>
+                            <constraint firstItem="NmU-qm-9V8" firstAttribute="centerX" secondItem="K9I-jD-KjA" secondAttribute="centerX" id="N27-54-dNv"/>
+                            <constraint firstItem="NmU-qm-9V8" firstAttribute="top" secondItem="K9I-jD-KjA" secondAttribute="top" constant="20" id="OwM-nS-che"/>
+                            <constraint firstItem="Yu9-GH-O3n" firstAttribute="top" secondItem="ghV-4l-mrN" secondAttribute="bottom" constant="20" id="pLH-ur-gVg"/>
+                            <constraint firstItem="Yu9-GH-O3n" firstAttribute="centerX" secondItem="K9I-jD-KjA" secondAttribute="centerX" id="pmk-8P-8bn"/>
+                            <constraint firstItem="ghV-4l-mrN" firstAttribute="top" secondItem="NmU-qm-9V8" secondAttribute="bottom" constant="20" id="qv2-rg-uUy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K9I-jD-KjA"/>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton" destination="Yu9-GH-O3n" id="wKm-ak-lr2"/>
+                        <outlet property="answerTextField" destination="ghV-4l-mrN" id="Fwc-b5-fVB"/>
+                        <outlet property="backgroundImage" destination="Mri-pl-FGb" id="hd3-k7-tH9"/>
+                        <outlet property="questionLabel" destination="NmU-qm-9V8" id="ocm-fU-uuO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="130"/>
+        </scene>
+        <!--Gift View Controller-->
+        <scene sceneID="HtQ-Q3-qmC">
+            <objects>
+                <viewController id="NYr-Ec-46d" customClass="GiftViewController" customModule="EightMarchDraniki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pet-eJ-H9h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gift" translatesAutoresizingMaskIntoConstraints="NO" id="o31-Pq-0o8">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="819"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поздравляем!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktw-fO-c0N">
+                                <rect key="frame" x="116" y="315" width="143" height="25"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oHF-gB-aIk" firstAttribute="bottom" secondItem="o31-Pq-0o8" secondAttribute="bottom" constant="-40" id="AHr-RN-fjI"/>
+                            <constraint firstItem="o31-Pq-0o8" firstAttribute="top" secondItem="oHF-gB-aIk" secondAttribute="top" constant="-45" id="BVX-VU-9El"/>
+                            <constraint firstItem="oHF-gB-aIk" firstAttribute="trailing" secondItem="o31-Pq-0o8" secondAttribute="trailing" id="SbQ-Eh-5zV"/>
+                            <constraint firstItem="o31-Pq-0o8" firstAttribute="leading" secondItem="oHF-gB-aIk" secondAttribute="leading" id="YDg-gI-6kd"/>
+                            <constraint firstItem="ktw-fO-c0N" firstAttribute="top" secondItem="oHF-gB-aIk" secondAttribute="top" constant="271" id="gyK-a6-6N5"/>
+                            <constraint firstItem="ktw-fO-c0N" firstAttribute="centerX" secondItem="oHF-gB-aIk" secondAttribute="centerX" id="qJ4-uN-aeS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oHF-gB-aIk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMs-1n-LoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="-241"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background0" width="595.20001220703125" height="841.91998291015625"/>
+        <image name="Gift" width="850.08001708984375" height="1200"/>
+        <image name="Welcome" width="853.44000244140625" height="1134"/>
+    </resources>
+</document>
