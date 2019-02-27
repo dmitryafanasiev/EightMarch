@@ -215,20 +215,33 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gift" translatesAutoresizingMaskIntoConstraints="NO" id="o31-Pq-0o8">
                                 <rect key="frame" x="0.0" y="-1" width="375" height="819"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поздравляем!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktw-fO-c0N">
-                                <rect key="frame" x="116" y="315" width="143" height="25"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktw-fO-c0N">
+                                <rect key="frame" x="20" y="354.66666666666669" width="335" height="113"/>
+                                <color key="backgroundColor" white="1" alpha="0.56616545376712324" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text" base64-UTF8="YES">
+0J/QvtC30LTRgNCw0LLQu9GP0LXQvCED4oCo0KMg0YLQtdCx0Y8g0L/QvtC70YPRh9C40LvQvtGB0Ywg
+0L7RgtCy0LXRgtC40YLRjCDQvdCwINCy0YHQtSDQstC+0L/RgNC+0YHRiyDQuCDRgtC10L/QtdGA0Ywg
+0L/QvtC00LDRgNC60YMg0L3QuNGH0YLQviDQvdC1INGD0LPRgNC+0LbQsNC10YIuA
+</string>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="oHF-gB-aIk" firstAttribute="leading" secondItem="ktw-fO-c0N" secondAttribute="leading" constant="-20" id="2u6-02-SV0"/>
+                            <constraint firstItem="ktw-fO-c0N" firstAttribute="centerY" secondItem="oHF-gB-aIk" secondAttribute="centerY" id="65l-fJ-SHz"/>
                             <constraint firstItem="oHF-gB-aIk" firstAttribute="bottom" secondItem="o31-Pq-0o8" secondAttribute="bottom" constant="-40" id="AHr-RN-fjI"/>
                             <constraint firstItem="o31-Pq-0o8" firstAttribute="top" secondItem="oHF-gB-aIk" secondAttribute="top" constant="-45" id="BVX-VU-9El"/>
                             <constraint firstItem="oHF-gB-aIk" firstAttribute="trailing" secondItem="o31-Pq-0o8" secondAttribute="trailing" id="SbQ-Eh-5zV"/>
                             <constraint firstItem="o31-Pq-0o8" firstAttribute="leading" secondItem="oHF-gB-aIk" secondAttribute="leading" id="YDg-gI-6kd"/>
-                            <constraint firstItem="ktw-fO-c0N" firstAttribute="top" secondItem="oHF-gB-aIk" secondAttribute="top" constant="271" id="gyK-a6-6N5"/>
+                            <constraint firstItem="ktw-fO-c0N" firstAttribute="trailing" secondItem="oHF-gB-aIk" secondAttribute="trailing" constant="-20" id="jve-2Q-cGU"/>
                             <constraint firstItem="ktw-fO-c0N" firstAttribute="centerX" secondItem="oHF-gB-aIk" secondAttribute="centerX" id="qJ4-uN-aeS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oHF-gB-aIk"/>
